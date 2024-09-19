@@ -26,3 +26,6 @@
         
     BDDMockito.doNothing().when(javaMailSender).send(any(SimpleMailMessage.class));
 ```
+
+#### PostServiceTest 를 직접 작성하며 느낀점
+> 테스트 하려는 메서드 로직 이해 후 검증하는데 집중해야겠다.  
