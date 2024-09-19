@@ -12,3 +12,17 @@
 #### 네이밍 컨벤션
 1. get은 데이터가 없으면 throw 를 던진다는 의미로 사용된다.
 2. find는 Optional 을 응답한다는 의미로 사용된다.
+
+#### Mockito
+> 이메일을 발송하는 JavaMailSender 를 대체하기 위해 사용
+```java
+    // @Autowired
+    // java bean 으로 등록된 객체를 Mock으로 선언된 객체로 덮어쓰기
+    // 이러면 테스트를 실행할 때 MockBean 값이 주입되어 실행됩니다.
+    @MockBean
+    private JavaMailSender javaMailSender;
+
+        ...
+        
+    BDDMockito.doNothing().when(javaMailSender).send(any(SimpleMailMessage.class));
+```
