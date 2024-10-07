@@ -80,3 +80,43 @@ class HealthCheckTest {
 3. 마지막 로그인 시간  
 4. 굉장히 느린 테스트 시간  
 5. H2를 사용하면서 발생한 동시성 문제  
+
+
+## 섹션 4
+### 방향성 탐색 : 레이어드 아키텍처의 문제점과 해결책
+![01](./document/resources/note/section_4_1/01.jpg)
+![02](./document/resources/note/section_4_1/02.jpg)
+![03](./document/resources/note/section_4_1/03.jpg)
+![04](./document/resources/note/section_4_1/04.jpg)
+![05](./document/resources/note/section_4_1/05.jpg)
+![06](./document/resources/note/section_4_1/06.jpg)
+![07](./document/resources/note/section_4_1/07.jpg)
+![08](./document/resources/note/section_4_1/08.jpg)
+![09](./document/resources/note/section_4_1/09.jpg)
+![10](./document/resources/note/section_4_1/10.jpg)
+![11](./document/resources/note/section_4_1/11.jpg)
+![12](./document/resources/note/section_4_1/12.jpg)
+![13](./document/resources/note/section_4_1/13.jpg)
+![14](./document/resources/note/section_4_1/14.jpg)
+![15](./document/resources/note/section_4_1/15.jpg)
+![16](./document/resources/note/section_4_1/16.jpg)
+![17](./document/resources/note/section_4_1/17.jpg)
+![18](./document/resources/note/section_4_1/18.jpg)
+![19](./document/resources/note/section_4_1/19.jpg)
+![20](./document/resources/note/section_4_1/20.jpg)
+![21](./document/resources/note/section_4_1/21.jpg)
+![22](./document/resources/note/section_4_1/22.jpg)
+![23](./document/resources/note/section_4_1/23.jpg)
+![24](./document/resources/note/section_4_1/24.jpg)
+![25](./document/resources/note/section_4_1/25.jpg)
+![26](./document/resources/note/section_4_1/26.jpg)
+![27](./document/resources/note/section_4_1/27.jpg)
+![28](./document/resources/note/section_4_1/28.jpg)
+![29](./document/resources/note/section_4_1/29.jpg)
+![30](./document/resources/note/section_4_1/30.jpg)
+![31](./document/resources/note/section_4_1/31.jpg)
+![32](./document/resources/note/section_4_1/32.jpg)
+![33](./document/resources/note/section_4_1/33.jpg)
+![34](./document/resources/note/section_4_1/34.jpg)
+![35](./document/resources/note/section_4_1/35.jpg)
+![36](./document/resources/note/section_4_1/36.jpg)
