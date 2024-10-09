@@ -52,7 +52,7 @@ class HealthCheckTest {
     @Test
     void 사용자는내정보를수정할수있다() throws Exception {
         // given
-        UserUpdateDto userUpdateDto = UserUpdateDto.builder()
+        UserUpdateDto userUpdate = UserUpdateDto.builder()
                 .nickname("doydoit-n")
                 .address("pangyo")
                 .build();
@@ -63,7 +63,7 @@ class HealthCheckTest {
                         put("/api/users/me")
                                 .header("EMAIL", "doydoit@gmail.com")
                                 .contentType(MediaType.APPLICATION_JSON)
-                                .content(objectMapper.writeValueAsString(userUpdateDto)))
+                                .content(objectMapper.writeValueAsString(userUpdate)))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.email").value("doydoit@gmail.com"))
                 .andExpect(jsonPath("$.nickname").value("doydoit-n"))
@@ -172,3 +172,6 @@ class HealthCheckTest {
 ![47](./document/resources/note/section_4_2/47.jpg)
 ![48](./document/resources/note/section_4_2/48.jpg)
 ![49](./document/resources/note/section_4_2/49.jpg)
+
+## 섹션 5 - 2부: 실기 수업 - 구조적 변화를 주는 테스트 코드
+### 패키지 구조 개선

@@ -1,12 +1,10 @@
 package com.example.demo.controller;
 
-import com.example.demo.model.UserStatus;
-import com.example.demo.model.dto.UserUpdateDto;
-import com.example.demo.repository.UserEntity;
-import com.example.demo.repository.UserRepository;
-import com.fasterxml.jackson.core.JsonProcessingException;
+import com.example.demo.user.domain.UserStatus;
+import com.example.demo.user.domain.UserUpdate;
+import com.example.demo.user.infrastructure.UserEntity;
+import com.example.demo.user.infrastructure.UserRepository;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
@@ -106,7 +104,7 @@ class UserControllerTest {
     @Test
     void 사용자는내정보를수정할수있다() throws Exception {
         // given
-        UserUpdateDto userUpdateDto = UserUpdateDto.builder()
+        UserUpdate userUpdate = UserUpdate.builder()
                 .nickname("doydoit-n")
                 .address("pangyo")
                 .build();
@@ -117,7 +115,7 @@ class UserControllerTest {
                 put("/api/users/me")
                         .header("EMAIL", "doydoit@gmail.com")
                         .contentType(MediaType.APPLICATION_JSON)
-                        .content(objectMapper.writeValueAsString(userUpdateDto)))
+                        .content(objectMapper.writeValueAsString(userUpdate)))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.email").value("doydoit@gmail.com"))
                 .andExpect(jsonPath("$.nickname").value("doydoit-n"))
