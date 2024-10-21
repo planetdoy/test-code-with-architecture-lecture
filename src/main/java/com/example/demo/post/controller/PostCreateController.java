@@ -1,5 +1,6 @@
 package com.example.demo.post.controller;
 
+import com.example.demo.post.domain.Post;
 import com.example.demo.post.domain.PostCreate;
 import com.example.demo.post.controller.response.PostResponse;
 import com.example.demo.post.service.PostService;
@@ -25,6 +26,6 @@ public class PostCreateController {
     public ResponseEntity<PostResponse> createPost(@RequestBody PostCreate postCreate) {
         return ResponseEntity
             .status(HttpStatus.CREATED)
-            .body(postController.toResponse(postService.create(postCreate)));
+            .body(PostResponse.from(postService.create(postCreate)));
     }
 }
