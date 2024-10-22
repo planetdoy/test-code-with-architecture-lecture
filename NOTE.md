@@ -230,3 +230,6 @@ userEntity.fromModel() -> O
 - 도메인에 책임이 생겨 테스트가 필요하다. ex)User.from();  
 - 불변객체의 반환은 새로운 인스턴스  
 - 의존성 역전원칙을 고려하지 않고 우선 현재 시간을 사용 ex) Clock.systemUTC().millis()  
+
+### 도메인에 테스트 추가하기
+> mockito, h2, springboot 없이 테스트하는 방법  
