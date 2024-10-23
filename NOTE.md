@@ -233,3 +233,6 @@ userEntity.fromModel() -> O
 
 ### 도메인에 테스트 추가하기
 > mockito, h2, springboot 없이 테스트하는 방법  
+> 소형 테스트를 작성하던 중  
+> Controller, Service, Repository 를 중형 테스트이니 패키지를 분리한다.  
+> 테스트 픽스쳐 : 테스트 전에 userService 를 미리 만들어서 사용
