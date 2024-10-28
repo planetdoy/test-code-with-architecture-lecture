@@ -28,7 +28,7 @@ public class FakePostRepository implements PostRepository {
                     .writer(post.getWriter())
                     .build();
             data.add(newPost);
-            return post;
+            return newPost;
         }
         else {
             data.removeIf(item -> Objects.equals(item.getId(), post.getId()));

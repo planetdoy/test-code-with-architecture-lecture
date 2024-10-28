@@ -236,3 +236,23 @@ userEntity.fromModel() -> O
 > 소형 테스트를 작성하던 중  
 > Controller, Service, Repository 를 중형 테스트이니 패키지를 분리한다.  
 > 테스트 픽스쳐 : 테스트 전에 userService 를 미리 만들어서 사용
+
+### 서비스를 소형 테스트로 만들기
+> 중형보다 소형의 속도가 비교가 안되도록 빠르다.    
+> 소형으로 작성하다보면 의존성에 대한 필요에 따라 리팩토링 요소가 발생한다.
+> 테스트를 짜는게 귀찮으면 의존성을 줄이라는 신호라고 생각해 볼 수 있다.  
+```java
+public class PostService {
+
+   private final PostRepository postRepository;
+//   private final UserService userService;     // asis
+   private final UserRepository userRepository; // tobe 
+   
+   // ...
+   
+}
+```
+
+> 이번 강의에서는 H2, mockito 를 사용하지 않고 테스트를 작성했는데  
+> 이말은 굳이 자바가 아니라 다른 언어를 사용해도 테스트 라이브러리 없이 테스트를 작성할 수 있다는걸 배웠다는 것이다.  
+> 이게 가능했던 점은 의존성 역전과 의존성 주입을 잘 적용했기 때문에 설계가 나아졌기 때문이다.  
