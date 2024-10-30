@@ -256,3 +256,15 @@ public class PostService {
 > 이번 강의에서는 H2, mockito 를 사용하지 않고 테스트를 작성했는데  
 > 이말은 굳이 자바가 아니라 다른 언어를 사용해도 테스트 라이브러리 없이 테스트를 작성할 수 있다는걸 배웠다는 것이다.  
 > 이게 가능했던 점은 의존성 역전과 의존성 주입을 잘 적용했기 때문에 설계가 나아졌기 때문이다.  
+
+### 컨트롤러를 소형 테스트로 만들기
+> 우선 서비스를 추상화합니다.  
+> 추상화에 의존하게 하는 것에만 집중한 나머지 하위 패키지인 service가 상위 패키지인 controller에 의존하는 그림이 나왔다. 주의하자.  
+> UserService를 mock이나 fake로 구현하는건 힘듦 그래서 인터페이스를 분리함  
+```text
+UserService -> UserCreateService, UserReadService, UserUpdateService, AuthenticationService
+```
+> stub 은 선호하지 않는다 결과를 정해놓으면 구현을 제한하기 때문이다. 책임을 위임하고 구현은 알아서해라...  
+> 대신 TestContainer를 만들어서 스프링의 IoC 컨테이너를 흉내 내는 코드를 작성합니다.  
+> CertificationService는 controller 같은 외부 호출이 없으니 추상화하지 않아도 된다.  
+> 
