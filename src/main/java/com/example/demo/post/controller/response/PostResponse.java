@@ -20,6 +20,7 @@ public class PostResponse {
         return PostResponse.builder()
                 .id(post.getId())
                 .content(post.getContent())
+                .createdAt(post.getCreatedAt())
                 .modifiedAt(post.getModifiedAt())
                 .writer(UserResponse.from(post.getWriter()))
                 .build();
