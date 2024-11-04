@@ -267,4 +267,6 @@ UserService -> UserCreateService, UserReadService, UserUpdateService, Authentica
 > stub 은 선호하지 않는다 결과를 정해놓으면 구현을 제한하기 때문이다. 책임을 위임하고 구현은 알아서해라...  
 > 대신 TestContainer를 만들어서 스프링의 IoC 컨테이너를 흉내 내는 코드를 작성합니다.  
 > CertificationService는 controller 같은 외부 호출이 없으니 추상화하지 않아도 된다.  
-> 
+
+### 마지막 리팩토링
+> 서비스인데 상위패키지인 컨트롤러(controller.port)의 인터페이스를 잘못 참조하고 있다.
