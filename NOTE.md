@@ -285,3 +285,10 @@ UserService -> UserCreateService, UserReadService, UserUpdateService, Authentica
 > - 상향식은 JPA를 하향식은 프레임워크를 먼저 생각하게 된다.  
 > - 중요한건 정책이고 문제를 파악하는 요구사항 명제!!
 > - 좋은 개발자가 되기 위해서는 본질과 험블을 구분할 수 있어야 하고 도메인을 설계하는 능력을 갖춰야한다.
+
+### [헥사고날에 대한 강의자의 사견](./document/resources/note/section_6_3.pdf)
+> - 비즈니스 집중 : DDD  
+> - 비즈니스 잘 구현 : 테스트  
+> - 비즈니스와 기술을 분리 : 클린아키텍처  
+> - 비즈니스와 기수을 분리하는 구체적 방법 : 헥사고날 아키텍처  
+> - [DDD 이벤트 스토밍 추천 강의](https://www.youtube.com/watch?v=QUMERCN3rZs)  
