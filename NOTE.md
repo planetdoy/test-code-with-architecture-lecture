@@ -292,3 +292,12 @@ UserService -> UserCreateService, UserReadService, UserUpdateService, Authentica
 > - 비즈니스와 기술을 분리 : 클린아키텍처  
 > - 비즈니스와 기수을 분리하는 구체적 방법 : 헥사고날 아키텍처  
 > - [DDD 이벤트 스토밍 추천 강의](https://www.youtube.com/watch?v=QUMERCN3rZs)  
+
+> ### [마무리와 부록](./document/resources/note/section_6_4.pdf)
+> - 테스트는 어디까지? - 릴리즈 할 때 확신을 주면 된다.
+> - 테스트는 무엇을 해야하나? Right-BICEP 를 적용해보자 (굳이?라는 부분도 있다)
+> - 성능이나 부하 테스트는 보통 ngrinder 라는 툴을 많이 이용한다.
+> - 테스트 팁
+> - 테스트는 가시성 가독성 표현력이 중요하다.
+> - 사람이 이해할 수 있는 코드는 명확해야 하고 의도가 드러난 설계를 가져야 하고 의도가 드러나는 테스트가 있으면 제일 완벽하다.  
+> - 테스트는 그 자체로 문서이다.  
